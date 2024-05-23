@@ -1,0 +1,150 @@
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: space-evenly;
+  min-width: 320px;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h4 {
+  font-size: 1.2em;
+  line-height: 0.5;
+}
+
+/* Styling for the introduction text of the application. */
+.intro {
+  text-align: center; /* The text is centered. */
+  color: #610564; /* The color of the text. */
+  font-size: 24px; /* The size of the text. */
+  padding: 24px; /* The padding around the text. */
+  margin-left: 21px; /* The margin to the left of the text. */
+  padding-right: 100px; /* The padding to the right of the text. */
+  padding-left: 100px; /* The padding to the left of the text. */
+}
+
+/* Styling for the container that holds the player cards. */
+.players {
+  display: flex; /* The player cards are displayed using flexbox. */
+  flex-wrap: wrap; /* The player cards will wrap onto the next line if there is not enough space. */
+  align-items: center;  /* The player cards are centered on the line. */
+}
+
+/* Styling for individual player cards. */
+.player-card {
+  width: 360px; /* The width of the card. */
+  height: 380px; /* The height of the card. */
+  margin: 10px; /* The margin around the card. */
+  background-color: #535bf2; /* The background color of the card. */
+  border: 2px solid black;/* The border around the card. */
+  border-radius: 20px;/* The radius of the card's corners. */
+  box-shadow: 0.3em 0.3em 1em black; /* The shadow effect around the card. */
+  overflow: hidden; /* Any content that goes outside the card will be hidden. */
+  position: relative; /* The card's position is set to relative so it can be moved using the transform property. */
+  transition: transform 0.3s; /* Transition effect for the transform property. */
+}
+
+/* Styling for when a user hovers over a player card. */
+.player-card:hover {
+  margin-top: 5px;/* The card moves up 5 pixels when hovered over. */
+}
+
+/* Styling for the container that holds the player's image. */
+.player-image-container {
+  text-align: center; /* The image is centered. */
+  justify-content: center; /* The image is centered along the horizontal axis. */
+  align-content: center; /* The image is centered along the vertical axis. */
+  height: 300px; /* The height of the image container. */
+  padding: 10px; /* The padding around the image. */
+}
+
+/* Styling for the player's image. */
+.player-image {
+  width: 250px; /* The width of the image. */
+  height: 200px; /* The height of the image. */
+  object-fit: cover;/* The image will cover the entire area of its container without distorting its aspect ratio. */
+  display: grid;/* The image is displayed using CSS Grid. */
+  margin-left: 3em;/* The margin to the left of the image. */
+  margin-top: 5px;
+  border-radius: 10%;
+}
+
+/* Styling for the player's details (name, breed, status). */
+.player-details {
+  flex-direction: column; /* The details are arranged in a column. */
+  align-items: center; /* The details are centered along the vertical axis. */
+  justify-content: center; /* The details are centered along the horizontal axis. */
+  color: #000; /* The color of the details text. */
+  font-size: 16px; /* The size of the details text. */
+  text-align: center; /* The details text is centered. */
+}
+
+.searchBar {
+  margin-bottom: 10em;
+}
+
+.header {
+  background-color: aliceblue;
+  height: min-content;
+}
+
+.links {
+  padding: 2em;
+  color: white;
+}
+
+.links:hover {
+  color: fuchsia;
+}
+
+form label {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: black;
+  background-color:#535bf2;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 2px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: black;
+  background-color: #535bf2;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+
